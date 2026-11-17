@@ -962,7 +962,7 @@ def main(page: ft.Page):
                 label="Choose a Theme", value=theme_select,
                 label_style=ft.TextStyle(size=13, color=theme["text_secondary"]),
                 on_select=change_theme, options=get_themes_options(),
-                border=ft.OutlineInputBorder(side=ft.BorderSide(color=theme["border"])),
+                border=ft.OutlinedBorder(side=ft.BorderSide(color=theme["border"])),
             )
             return build_options_views(
                 page=page, theme=theme, settings=settings,
